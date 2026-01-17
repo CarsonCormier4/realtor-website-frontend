@@ -1,0 +1,114 @@
+/* Home.css */
+.home-container {
+  padding-top: 8rem; /* Increased padding to prevent smothering */
+  background-color: #f8f8f8;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* Search Section */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px; /* Adds spacing below search bar */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  gap: 10px;
+  width: 50%;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  height: 44px; /* Set explicit height */
+}
+
+/* Also ensure no inherited styles override it */
+.search-bar input::placeholder {
+  color: #666 !important; /* Light gray for placeholder text */
+}
+
+.search-bar button {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 12px 20px; /* Increase padding for better alignment */
+  border-radius: 5px;
+  cursor: pointer;
+  height: 44px; /* Ensure same height as input */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.filter-buttons button {
+  border: 2px solid gold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  color: black;
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Map Section */
+.map-container {
+  flex: 1;
+  height: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Listings Section */
+.listings-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .main-layout {
+      flex-direction: column;
+  }
+  .map-container,
+  .listings-container {
+      width: 100%;
+  }
+  .listings-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}

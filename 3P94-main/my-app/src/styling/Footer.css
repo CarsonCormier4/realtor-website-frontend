@@ -1,0 +1,53 @@
+.footer {
+    background-color: black; /* Black Background */
+    color: white; /* White Text */
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+    border-top: 4px solid gold; /* Gold Line at the Top */
+  }
+  
+  .breadcrumb {
+    font-size: 0.9rem;
+    color: #ccc; /* Lighter grey for breadcrumbs */
+    margin-bottom: 10px;
+  }
+  
+  .footer-description {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .footer-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  .footer-subtext {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .city-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+  }
+  
+  .city-links span {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .city-links span:hover {
+    color: gold;
+  }
+  
